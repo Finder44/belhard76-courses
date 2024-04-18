@@ -1,3 +1,3 @@
 print('Hello world')
-print ('Rock')
-print ('Pull')
+print('Rock')
+print('Pull')
