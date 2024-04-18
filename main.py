@@ -1,3 +1,2 @@
-print('Hello world')
-print('Rock')
-print('Pull')
+def foo():
+    foo()
