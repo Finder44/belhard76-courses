@@ -1,4 +1,1 @@
-def loo():
-    loo()
-class Bar(object):
-    __slots__=()
+import this
