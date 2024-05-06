@@ -9,3 +9,15 @@ data = {
     for i in range(1, int(input("n=")) + 1)  # 1
 }
 print(data)
+# РАЗБЕРИСЬ разберись
+# n = input()
+# data = {
+#     i:{
+#         "name":input(f"name {i} " ),
+#         "email":input(f"email {i}")
+#     }
+#     for i in range(1, int(n)+1)
+# }
+# print(data)
+# for неусловный,перебор
+# while условный
