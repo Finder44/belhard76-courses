@@ -21,6 +21,5 @@ def new_sistem(walue,operation):
 
 walue = int(input("Введиет число "))
 operation = int(input("Выберите операцию "))
-
 print(new_sistem(walue,operation))
     # print("".join(str(num) for num in new_wal))
