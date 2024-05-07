@@ -1,3 +1,4 @@
+# Функция перевода чисел из 10 в 2 и наоборот
 def new_sistem(walue,operation):
     if operation == 1:
         new_wal = []
