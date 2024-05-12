@@ -8,14 +8,13 @@ def morze(poslanie: str):
         "U": "..- ", "V": "...- ", "W": ".-- ", "X": "-..- ", "Y": "-.-- ",
         "Z": "--.. ", "0": "----- ", "1": ".---- ", "2": "..--- ", "3": "...-- ", "4": "....- ",
         "5": "..... ", "6": "-.... ", "7": "--... ", "8": "---.. ", "9": "----. ",
-        " ": "   "
     }
     words = poslanie.split()
     for word in words:
         for i in word:
             if i in data:
                 fst += data[i]
-        fst += "  "
+        fst += "/ "
     return fst
 
 
