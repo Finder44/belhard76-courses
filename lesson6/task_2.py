@@ -14,7 +14,7 @@ def morze(poslanie: str):
         for i in word:
             if i in data:
                 fst += data[i]
-        fst += "/ "
+        fst += "  "
     return fst
 
 
