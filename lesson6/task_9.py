@@ -5,7 +5,7 @@ data = {
     "4": {"name": "Meks", "last_name": "Geks", "email": None, "telephote": "+343454652"}
 }
 
-
+print(data.items())
 def email(data):
     flist = []
     for id, user_info in data.items():
