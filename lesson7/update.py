@@ -27,10 +27,7 @@ class Categories:
     # категорий на этом индексе, если нет элемента на таком индексе, вызвать исключение
     # IndexError
     def get(self, index: int):
-        if index in range(0, len(self.categories)):
-            return self.categories[index]
-        elif index not in range(0, len(self.categories)):
-            raise IndexError("Такого индекса не существует")
+        return self.categories[index]
     # 3.3 Написать метод класса delete принимающий индекс категории в списке категорий и
     # удаляющий элемент из списка категорий на этом индексе, если нет элемента на таком
     # индексе, ничего не делать, метод ничего возвращать не должен
