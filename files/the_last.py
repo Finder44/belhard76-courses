@@ -6,13 +6,11 @@ def read_yaml_file(filename):
         return yaml.safe_load(file)
 
 
-def get_task_dependencies(task_name, task_dict, all_tasks, visited):
-    if task_name in visited:
-        return
-    visited.add(task_name)
+def get_task_dependencies(task_name, task_dict, all_tasks):
+
     dependencies = task_dict.get(task_name, [])
     for dep in dependencies:
-        get_task_dependencies(dep, task_dict, all_tasks, visited)
+        get_task_dependencies(dep, task_dict, all_tasks)
     all_tasks.append(task_name)
 
 
@@ -26,7 +24,7 @@ def get_tasks_for_build(build_name, builds_data, tasks_data):
     visited = set()
 
     for task in build['tasks']:
-        get_task_dependencies(task, task_dict, all_tasks, visited)
+        get_task_dependencies(task, task_dict, all_tasks)
 
     return all_tasks
 
