@@ -25,7 +25,6 @@ def get_tasks_for_build(build_name, builds_data, tasks_data):
 
     for task in build['tasks']:
         get_task_dependencies(task, task_dict, all_tasks)
-
     return all_tasks
 
 
